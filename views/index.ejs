@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BTP</title>
+    
+    <% include ./partials/header.ejs %>
+
+</head>
+<body>
+    <% include ./partials/navbar.ejs %>
+    <div class="container mt-4">
+        <% if(message.length){ %>
+            <div class="alert alert-success alert-dismissable fade show">
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">
+                        &times; <!--  x button -->
+                    </span>
+                </button>
+                <%= message%>
+            </div>
+        <% } %>
+        <h2>Welcome to BTP!!</h2>
+    </div>
+</body>
+</html>
